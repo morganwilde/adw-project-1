@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="418" y="390"/>
         </scene>
-        <!--View Controller-->
+        <!--Fact Controller-->
         <scene sceneID="q0z-ra-dRY">
             <objects>
-                <viewController id="YKK-jr-kNg" sceneMemberID="viewController">
+                <viewController id="YKK-jr-kNg" customClass="FactController" customModule="Blower" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dsd-qG-TZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="NmX-Kx-1ek"/>
