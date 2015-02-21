@@ -114,6 +114,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="85Y-4V-jor" id="YgS-rQ-l8U"/>
+                                    <segue destination="1qh-28-YLi" kind="show" identifier="segueTest" id="R2N-fv-VVf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -127,6 +128,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6G-1I-7zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1003" y="998"/>
+        </scene>
+        <!--Selected Fact View Controller-->
+        <scene sceneID="goE-Vh-676">
+            <objects>
+                <viewController id="1qh-28-YLi" customClass="SelectedFactViewController" customModule="Blower" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Js-Xb-KMx"/>
+                        <viewControllerLayoutGuide type="bottom" id="qmj-Ci-X5E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="drD-6n-t5n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tJ-oP-Chf">
+                                <rect key="frame" x="16" y="201" width="357" height="334"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="factText" destination="4tJ-oP-Chf" id="Iyn-mP-SDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSt-e9-kyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="998"/>
         </scene>
     </scenes>
 </document>

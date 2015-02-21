@@ -11,6 +11,7 @@ import UIKit
 
 class CustomTableViewController : UITableViewController, UITableViewDataSource, UITableViewDelegate {
     let facts = Facts()
+    var number = 0
     
     
     override func viewDidLoad() {
@@ -45,6 +46,19 @@ class CustomTableViewController : UITableViewController, UITableViewDataSource, 
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        number = indexPath.row
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let identifier = segue.identifier {
+            if(identifier == "segueTest"){
+                var destinationController = segue.destinationViewController as SelectedFactViewController;
+                destinationController.factText?.text = facts.getStringArray()[number]
+            }
+        }
         
         
         

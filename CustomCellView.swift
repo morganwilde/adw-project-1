@@ -15,23 +15,19 @@ class CustomCellView: UITableViewCell{
     
     override init() {
         super.init()
-        println("standard")
     }
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         //fatalError("init(coder:) has not been implemented")
-        println("coder")
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        println("frame")
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        println("style")
         
     }
     
