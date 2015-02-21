@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 class FactController: UIViewController {
     
     @IBOutlet weak var factLabel: UILabel!
