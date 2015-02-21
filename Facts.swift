@@ -15,7 +15,7 @@ class Facts {
     var factTitle:[String]
     
     init() {
-        self.factsList = ["Earth is bigger than Mars."]
+        self.factsList = ["Earth is bigger than Mars.", "Moon is smaller than Earth."]
         self.factTitle = ["Space"]
     }
     
