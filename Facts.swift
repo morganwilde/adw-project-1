@@ -11,4 +11,21 @@ import Foundation
 
 class Facts {
     
+    var factsList:[String]
+    var factTitle:[String]
+    
+    init() {
+        self.factsList = ["Earth is bigger than Mars."]
+        self.factTitle = ["Space"]
+    }
+    
+    func getStringArray() -> [String]{
+        return factsList
+    }
+    
+    func getRandomFact() -> String{
+        let random = Int(arc4random_uniform(UInt32(factsList.count)))
+        return factsList[random]
+    }
+    
 }

@@ -11,8 +11,13 @@ import UIKit
 
 class FactController: UIViewController {
     
+    @IBOutlet weak var factLabel: UILabel!
+    let facts = Facts()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        factLabel.text = facts.getRandomFact()
+        
     }
     
 }
