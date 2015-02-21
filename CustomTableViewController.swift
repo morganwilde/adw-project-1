@@ -10,9 +10,14 @@ import Foundation
 import UIKit
 
 class CustomTableViewController : UITableViewController, UITableViewDataSource, UITableViewDelegate {
+    let facts = Facts()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        facts.getStringArray()
+        
+        
         //tableView.registerClass(CustomCellView.self as AnyClass, forCellReuseIdentifier: "CellSpace")
     }
     
@@ -27,6 +32,7 @@ class CustomTableViewController : UITableViewController, UITableViewDataSource, 
 //            //cell = CustomCellView(style: UITableViewCellStyle.Default, reuseIdentifier: "CellSpace")
 //            cell = CustomCellView()
 //        }
+        cell.titleLabel.text = facts.getStringArray()[indexPath.row]
         
         
         return cell
@@ -35,7 +41,13 @@ class CustomTableViewController : UITableViewController, UITableViewDataSource, 
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return facts.getStringArray().count
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
     }
     
     
